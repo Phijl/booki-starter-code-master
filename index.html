@@ -13,16 +13,26 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/da42d9ecc2.js" crossorigin="anonymous"></script> <!-- Lien donner par le site font awesome demandé en étape1 --> 
+    <link rel="shortcut icon" href="images\logo\Booki.png"> <!-- icone au dessus de la barre de recherche-->
 </head>
 
 <body>
     <div class="main-container"> 
         
-        <header></header>
+        <header>
+            <section class="icone">
+             <img src="G:\Mon Drive\OC\Projet 2\booki-starter-code-master\booki-starter-code-master\images\logo\Booki.png" alt="Booki">
+                <div class="texte">
+                    <a href="#ancre_hebergement"> Hébergements</a>
+                    <a href="#ancre_activite"> Activités</a> <!-- dois crée ID ancre_activite-->
+                </div>
+            </section>
+        </header>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <i class="fa-solid dog-solid"></i> <!-- dog solid ne renvoie a rien, je n'arrive pas a crée un kit icone car c'est payant-->
+                    <h1 id="ancre_hebergement">Hébergements à Marseille</h1>
+                    <i class="fa-solid fa-dog"></i> <!-- test fonctionnent de font awesome-->
 
                 </section>
                 <section class="populaires">
