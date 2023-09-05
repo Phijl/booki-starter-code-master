@@ -13,10 +13,11 @@
     color: var(--main-color);
 }
 
-body {
+.body {
     display: flex;
     justify-content: center;
 }
+
 
 .main-container {
     width: 100%;
@@ -72,8 +73,15 @@ a {
 }
 
 /****** Hebergements ***********/
+/* Modifier, je pense qu'il faut parler en % et non en pixel pour que ca soit utilisable sur tel/pc/tablette mais je ne sais pas comment connaitre le % */
 .hebergements {
-    width: 65%;
+    display: flex;
+    width: 880px;
+    height: 626px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
 }
 
 /****** Populaires ***********/
@@ -164,4 +172,25 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+
+/* typographie crée par moi */
+.h1 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Entete */
+.icone {
+    display: flex;
+    flex-direction: row;
+    
+}
+.texte{
+    display: flex;
+    justify-self: flex-end;
 }
