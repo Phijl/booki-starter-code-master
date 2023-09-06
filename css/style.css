@@ -194,3 +194,7 @@ a {
     display: flex;
     justify-self: flex-end;
 }
+ul {
+    list-style-type: none;
+    display: inline;
+  }
