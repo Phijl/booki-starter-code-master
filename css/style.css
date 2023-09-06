@@ -184,17 +184,26 @@ a {
     line-height: normal;
 }
 
-/* Entete */
-.icone {
-    display: flex;
-    flex-direction: row;
-    
-}
-.texte{
-    display: flex;
-    justify-self: flex-end;
-}
 ul {
-    list-style-type: none;
-    display: inline;
+    list-style: none; /* Supprimer les puces de la liste */
   }
+
+li {
+    display: inline; /* Afficher les éléments de la liste en ligne */
+    margin-right: 67px; /* Ajouter un espacement entre les éléments, 67px trouver sur la maquette */
+    font-size: 16px; /* Taille de la police */
+  }
+  
+
+.conteneur {
+    overflow: hidden; /* Pour contenir les éléments flottant */
+  }
+  
+  .element-gauche {
+    float: left; /* Aligner à gauche */
+  }
+  
+  .element-droite {
+    float: right; /* Aligner à droite */
+  }
+  
