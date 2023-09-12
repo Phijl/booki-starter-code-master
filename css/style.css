@@ -185,25 +185,35 @@ a {
 }
 
 ul {
-    list-style: none; /* Supprimer les puces de la liste */
+    list-style: none; 
   }
 
 li {
-    display: inline; /* Afficher les éléments de la liste en ligne */
-    margin-right: 67px; /* Ajouter un espacement entre les éléments, 67px trouver sur la maquette */
-    font-size: 16px; /* Taille de la police */
+    display: inline-block; 
+    position: relative;
+    font-size: 16px;
+    padding: 19px 67px;
   }
   
 
 .conteneur {
-    overflow: hidden; /* Pour contenir les éléments flottant */
+    overflow: hidden; 
   }
   
   .element-gauche {
-    float: left; /* Aligner à gauche */
+    float: left; 
   }
   
   .element-droite {
-    float: right; /* Aligner à droite */
+    float: right; 
   }
-  
+
+.effet-survol:hover {
+    color: var(--main-color); /* Couleur du texte au survol */
+    border-top: 2px solid var(--main-color); /* Barre bleue au-dessus du texte au survol */
+    padding-top: 10px ;
+    width: 162px ; /*cette ligne ne fonctionne pas, pourquoi ?*/
+    flex-shrink: 0; /*pour que ca soit flexible au moment du passage sur tel*/
+    text-align: center;
+}
+
