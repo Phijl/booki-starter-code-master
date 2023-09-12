@@ -205,15 +205,18 @@ li {
   }
   
   .element-droite {
-    float: right; 
+    float: right;
+      margin-top: 0px;
   }
 
 .effet-survol:hover {
     color: var(--main-color); /* Couleur du texte au survol */
     border-top: 2px solid var(--main-color); /* Barre bleue au-dessus du texte au survol */
-    padding-top: 10px ;
-    width: 162px ; /*cette ligne ne fonctionne pas, pourquoi ?*/
-    flex-shrink: 0; /*pour que ca soit flexible au moment du passage sur tel*/
-    text-align: center;
 }
 
+.effet-survol {
+    width: 162px ; /*cette ligne ne fonctionne pas, pourquoi ?*/
+    text-align: center;
+    padding-top: 30px;
+
+}
