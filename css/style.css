@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin-top: 0;
 }
 
 :root {
@@ -206,7 +207,7 @@ li {
   
   .element-droite {
     float: right;
-      margin-top: 0px;
+      margin-top: 0;
   }
 
 .effet-survol:hover {
@@ -218,5 +219,6 @@ li {
     width: 162px ; /*cette ligne ne fonctionne pas, pourquoi ?*/
     text-align: center;
     padding-top: 30px;
+    border-top: 2px solid white; /* Barre bleue au-dessus du texte au survol */
 
 }
