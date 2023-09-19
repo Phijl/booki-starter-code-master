@@ -16,6 +16,7 @@
 .body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 
@@ -191,15 +192,14 @@ ul {
 
 li {
     display: inline-block; 
-    position: relative;
     font-size: 19px;
-    padding: 19px 67px;
+    
   }
   
 
 .conteneur {
     overflow: hidden; 
-    
+        
   }
   
   .element-gauche {
@@ -207,19 +207,24 @@ li {
     justify-content: center;
     width: 61.09px;
     height: 19px;
+    padding-top: 44px;
   }
   
   .element-droite {
     float: right; 
+
   }
+li.effet-survol {
+    width: 162px ;
+    text-align: center;
+    border-top: 2px solid transparent; 
+    padding-top: 44px;
+}  
 
 .effet-survol:hover {
     color: var(--main-color); /* Couleur du texte au survol */
     border-top: 2px solid var(--main-color); /* Barre bleue au-dessus du texte au survol */
-    padding-top: 10px ;
-    width: 162px ; /*cette ligne ne fonctionne pas, pourquoi ?*/
-    flex-shrink: 0; /*pour que ca soit flexible au moment du passage sur tel*/
-    text-align: center;
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -267,8 +272,8 @@ p{
     background-color: #F2F2F2;
 }
 input{ 
-    border-top-color: #F2F2F2;
     border-bottom-color: #F2F2F2;
     border-left-color: transparent;
     border-right-color: transparent;
+    border-top: 2px solid #F2F2F2;
 }
