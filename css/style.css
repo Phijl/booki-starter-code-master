@@ -199,10 +199,14 @@ li {
 
 .conteneur {
     overflow: hidden; 
+    
   }
   
   .element-gauche {
     float: left; 
+    justify-content: center;
+    width: 61.09px;
+    height: 19px;
   }
   
   .element-droite {
@@ -233,13 +237,13 @@ li {
     background-color: var(--main-color);
     color: white;
     border-radius:0px 15px 15px 0px;
-    border-color: var(--main-color);
+    border-color:transparent;
 }
 .disparaitM{
     background-color: var(--main-color);
     color: white;
     border-radius:0px 15px 15px 0px; 
-    border-color: var(--main-color);
+    border-color:transparent;
 }
 .barreR{
     display: flex;
@@ -259,9 +263,12 @@ p{
 .boutonG{
     border-radius: 15px 0px 0px 15px;
     width: 50px;
-    border-color:var(--main-bg-color) ;
-    background-color: var(--main-bg-color);
+    border-color:transparent;
+    background-color: #F2F2F2;
 }
 input{ 
-    border-color: var(--main-bg-color);
+    border-top-color: #F2F2F2;
+    border-bottom-color: #F2F2F2;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
