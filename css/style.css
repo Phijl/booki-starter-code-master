@@ -176,6 +176,23 @@ a {
 }
 
 /* typographie crée par moi */
+.flexbetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexcentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexaround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 .h1 {
     color: #000;
     font-family: Raleway;
@@ -185,6 +202,25 @@ a {
     line-height: normal;
     margin-bottom: 8px;
 }
+.h2 {
+    color: #000;
+text-align: center;
+
+/* Title/Filter */
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+input::placeholder {
+    color: var(--Black, #000);
+    font-size: 18px;
+    font-weight: 700  
+    
+    
+}
+
 
 ul {
     list-style: none; 
@@ -205,25 +241,31 @@ li {
   .element-gauche {
     float: left; 
     justify-content: center;
-    width: 61.09px;
+    width: 61px;
     height: 19px;
-    padding-top: 44px;
+    padding-top: 43px;
   }
   
   .element-droite {
     float: right; 
-
+    justify-content: center;
+    padding-top: 20px;
   }
+
 li.effet-survol {
     width: 162px ;
     text-align: center;
-    border-top: 2px solid transparent; 
-    padding-top: 44px;
+    border-top: 2px solid transparent ; 
+    
+    
+    
 }  
 
 .effet-survol:hover {
     color: var(--main-color); /* Couleur du texte au survol */
     border-top: 2px solid var(--main-color); /* Barre bleue au-dessus du texte au survol */
+    
+    
     
 }
 
@@ -249,11 +291,17 @@ li.effet-survol {
     color: white;
     border-radius:0px 15px 15px 0px; 
     border-color:transparent;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    
 }
 .barreR{
     display: flex;
     flex-direction: row;
     height: 49px;
+    
 }
 p{
     color: #000;
@@ -277,3 +325,40 @@ input{
     border-right-color: transparent;
     border-top: 2px solid #F2F2F2;
 }
+
+/*Filtre*/
+.filtre{
+    display: flex;
+    align-items: center;
+}
+.margefiltre{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.margefiltretitre{
+    margin-right: 20px;
+}
+.filtreicone{
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtreicone:hover{
+    background-color:#DEEBFF ;
+}
+.espacefiltre{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.textefiltre{
+    margin-right: 10px;
+    color: var(--Black, #000);
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
