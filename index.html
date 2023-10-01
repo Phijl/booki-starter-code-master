@@ -15,22 +15,18 @@
     <script src="https://kit.fontawesome.com/da42d9ecc2.js" crossorigin="anonymous"></script> <!-- Lien donner par le site font awesome demandé en étape1 --> 
     <link rel="shortcut icon" href="images\logo\Booki.png"> <!-- icone au dessus de la barre de recherche-->
 </head>
-
 <body>
-    <div class="main-container"> 
-        <nav><header>
-          <div class="conteneur ">
-            <div>
-            <img class="element-gauche" src="images\logo\Booki.png" alt="Booki"> <!-- je n'arrive pas a centrer le logo -->
-            </div>
-            <div >
-                <ul class="element-droite">
-                    <li class="effet-survol"><a href=""></a>Hébergements</li> <!-- Il faut ajouter l'ancrage-->
-                    <li class="effet-survol"><a href=""></a>Activités</li> <!-- Il faut ajouter l'ancrage-->
-                </ul>
-            </div>
-          </div>  
-        </header></nav>
+    <nav>
+    <div class="flexbetween">
+        <div><img src="images\logo\Booki.png" alt="Logo Booki" width="61px" height="19px"></div>
+        <div class="flexaround">
+            <div class="larglien flexcentre bordure"><a href="#">Hébergements</a></div>
+            <div class="larglien flexcentre bordure"><a href="#">Activités</a></div>
+        </div>
+    </div>
+    </nav>
+</body>
+<body>
     <div>
         <div>
             <div>
@@ -45,7 +41,7 @@
                             </label>
                             <div class="barreR"> <!-- je ne sais pas pourquoi il y a le border top qui est plus foncé  -->
                                 <button class="boutonG"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></button>
-                                <input type="search" name="Lieu" id="Lieu" placeholder="Marsaille, France">                           
+                                <input type="search" name="Lieu" id="Lieu" placeholder="Marseille, France">                           
                                 <button class="disparaitM">Recherche</button>
                                 <button class="disparaitD"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                             </div>                           
