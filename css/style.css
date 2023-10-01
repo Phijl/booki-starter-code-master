@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 :root {
@@ -291,15 +294,16 @@ input{
 
 .bordure{
     border-top: 1px solid transparent;
-    display: flex
+    display: flex;
+    padding-top: 0px; 
 }
 
-.bordure :hover{
+.bordure:hover{
     border-top: 1px solid #0065FC;  
     color: #0065FC;
     width: 164px;
     text-align: center;
-    padding-top: 99px;  
+     
     
 }
 
