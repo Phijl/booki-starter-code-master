@@ -244,7 +244,7 @@ line-height: normal;
 /*Barre recherche*/
 
 input::placeholder {
-    color: var(--Black, #000);
+    color: black;
     font-size: 18px;
     font-weight: 700;
     padding-left: 20px;
