@@ -4,7 +4,9 @@
     margin: 0;
     margin-left: 10px;
     margin-right: 10px;
+
 }
+
 
 :root {
     --main-color: #0065FC;
@@ -296,6 +298,9 @@ input{
     border-top: 1px solid transparent;
     display: flex;
     padding-top: 0px; 
+    display: flex;
+    padding-top: 99px;
+
 }
 
 .bordure:hover{
@@ -303,8 +308,6 @@ input{
     color: #0065FC;
     width: 164px;
     text-align: center;
-     
-    
 }
 
 
