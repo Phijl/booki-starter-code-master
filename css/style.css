@@ -8,18 +8,22 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 }
 
 .fa-solid {
     color: var(--main-color);
 }
-
+body{
+    margin-top: 0px;
+}
 .body {
     display: flex;
     justify-content: center;
     margin-left: 55px;
     margin-right: 55px;
-    margin: 0;
 }
 
 
