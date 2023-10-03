@@ -359,7 +359,6 @@ input{
     }
     40% {
       transform: scale(1.2);
-      background-color: white;
     }
     100% {
       transform: scale(1.1);
@@ -378,7 +377,6 @@ input{
     }
     40% {
       transform: scale(0.9);
-      background-color: #DEEBFF; /* Couleur initiale au survol */
     }
     100% {
       transform: scale(1);
