@@ -1,10 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-
 }
 
 
@@ -242,6 +238,11 @@ line-height: normal;
   }
   
 /*Barre recherche*/
+.margerecherche{
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 input::placeholder {
     color: black;
@@ -261,10 +262,10 @@ input::placeholder {
     color: white;
     border-radius:0px 15px 15px 0px; 
     border-color:transparent;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     
 }
 .barreR{
@@ -330,9 +331,11 @@ input{
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
+    transition: background-color 1s ease, transform 1s ease;
 }
 .filtreicone:hover{
     background-color:#DEEBFF ;
+    animation: filtreHover 1s;
 }
 .espacefiltre{
     margin-left: 10px;
@@ -347,5 +350,41 @@ input{
     font-weight: 700;
     line-height: normal;
 }
+
+  
+  @keyframes filtreHover {
+    0% {
+      transform: scale(1);
+      background-color: white;
+    }
+    40% {
+      transform: scale(1.2);
+      background-color: white;
+    }
+    100% {
+      transform: scale(1.1);
+      background-color: #DEEBFF; /* Couleur finale au survol */
+    }
+  }
+  
+  .filtreicone:not(:hover) {
+    animation: filtreUnhover 1s;
+  }
+  
+  @keyframes filtreUnhover {
+    0% {
+      transform: scale(1.1);
+      background-color: #DEEBFF; /* Couleur initiale au survol */
+    }
+    40% {
+      transform: scale(0.9);
+      background-color: #DEEBFF; /* Couleur initiale au survol */
+    }
+    100% {
+      transform: scale(1);
+      background-color: white; /* Couleur finale lorsque le curseur quitte */
+    }
+  }
+  
 
 
