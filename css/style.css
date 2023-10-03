@@ -80,7 +80,7 @@ a {
 /* Modifier, je pense qu'il faut parler en % et non en pixel pour que ca soit utilisable sur tel/pc/tablette mais je ne sais pas comment connaitre le % */
 .hebergements {
     display: flex;
-    width: 880px;
+    width: 68%;
     height: 626px;
     justify-content: center;
     align-items: center;
