@@ -10,6 +10,8 @@
     --filter-bg-color: #DEEBFF;
     margin-left: 10px;
     margin-right: 10px;
+    max-width: 1440px;
+    min-width: 320px;  
     
 }
 
@@ -81,6 +83,9 @@ a {
     box-sizing: border-box;
     
 }
+.aff{
+    justify-content: center;
+}
 
 /****** Hebergements ***********/
 /* Modifier, je pense qu'il faut parler en % et non en pixel pour que ca soit utilisable sur tel/pc/tablette mais je ne sais pas comment connaitre le % */
@@ -92,12 +97,8 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-.hebergements-cards .card {
-    margin-top: 30px;
-    
-   
-    
+.margetitre{
+    margin-bottom: 23px;
 }
 
 .hebergements-cards img {
@@ -105,6 +106,7 @@ a {
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    min-width: 246px;
 }
 
 .hebergements-cards .card-content {
@@ -253,7 +255,8 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
+    gap: 31px;
 }
 .flexcolumncentre{
     display: flex;
@@ -410,7 +413,7 @@ input{
 }
 .filtreicone:hover{
     background-color:#DEEBFF ;
-    animation: filtreHover 1s;
+    animation: filtreHover 1s forwards;
 }
 .espacefiltre{
     margin-left: 10px;
@@ -442,7 +445,7 @@ input{
   }
   
   .filtreicone:not(:hover) {
-    animation: filtreUnhover 1s;
+    animation: filtreUnhover 1s forwards;
   }
   
   @keyframes filtreUnhover {
@@ -482,10 +485,10 @@ input{
     height: 600px;
 }
 .imgact{
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
+    height: 445px;
     
 }
 .cardact{
