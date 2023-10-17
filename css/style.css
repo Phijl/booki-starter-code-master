@@ -264,8 +264,7 @@ p{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 20px;
-    margin-top: 0px;
+    
 } 
 h1 {
     color: #000;
@@ -455,5 +454,16 @@ input{
     }
   }
   
+.iconei{
+    display: flex;
+    align-items: center;
+    }
 
+.cercle{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
 
