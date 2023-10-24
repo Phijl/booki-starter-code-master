@@ -233,7 +233,16 @@ a {
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-.flexbetween{
+:root {
+              margin-left: 00px;
+        margin-right: 00px;
+        max-width: 768px;
+        
+}
+body{
+    margin: 0px;
+}
+    .flexbetween{
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -260,6 +269,8 @@ a {
     flex-wrap: wrap;
     
 }
+.filtreicone{
+   width: 150px;
 
 }
 @media only screen and (max-width: 768px) {
