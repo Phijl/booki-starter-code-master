@@ -191,99 +191,7 @@ a {
 
 
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-.wrap{
-    display: flex;
-    flex-direction: row;
-}
-/* Small devices (phones, less than 768px) */
-@media (max-width: 768px) {
-:root {
-              margin-left: 00px;
-        margin-right: 00px;
-        max-width: 768px;
-        
-}
-body{
-    margin: 0px;
-}
-    .flexbetween{
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.booki{ 
-    margin-top: 21px ;
-}
-.bordure:active{
-    border-bottom: 1px solid #0065FC;  
-    color: #0065FC;
-    width: 164px;
-    text-align: center; 
-}
-.bordure {
-    border-bottom: 1px solid #F2F2F2;
-}
-.filtre{
-    
-    flex-direction: column;
-    align-items: flex-start;
-    
-}
-.wrap{ 
-    flex-wrap: wrap;
-    
-}
-.filtreicone{
-   width: 150px;
-
-}
-@media only screen and (max-width: 768px) {
-    .disparaitM {
-        display: none;   
-    }
-  }
-
-@media only screen and (min-width: 768px) {
-    .disparaitD {
-        display: none ;   
-    }
-  }
 /* typographie crée par moi */
 
 .flexbetween{
@@ -558,3 +466,99 @@ input{
 .margefootr{
     margin-right: 15%;
 }
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+.wrap{
+    display: flex;
+    flex-direction: row;
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+:root {
+        margin-left: 00px;
+        margin-right: 00px;
+        max-width: 768px;     
+}
+body{
+    margin: 0px;
+    
+}
+.flexbetween{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.booki{ 
+    margin-top: 21px ;
+}
+.bordure:active{
+    border-bottom: 1px solid #0065FC;  
+    color: #0065FC;
+    width: 164px;
+    text-align: center; 
+}
+.bordure {
+    border-bottom: 1px solid #F2F2F2;
+}
+.filtre{
+    
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.wrap{ 
+    flex-wrap: wrap;
+    
+}
+.filtreicone{
+   width: 150px;
+   margin-right: 0px;
+
+}
+}
+@media only screen and (max-width: 768px) {
+    .disparaitM {
+        display: none;   
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    .disparaitD {
+        display: none ;   
+    }
+  }
