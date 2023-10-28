@@ -194,7 +194,17 @@ a {
 
 /* typographie crée par moi */
 
-.flexbetween{
+.flexbetween1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexbetween2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexbetween3{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,6 +231,13 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.flexpopulaire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -466,7 +483,11 @@ input{
 .margefootr{
     margin-right: 15%;
 }
-
+.wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -474,20 +495,25 @@ input{
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        
     }
-
+   
     .hebergements {
         width: 100%;
+        height: 100%;
+        
     }
 
     .populaires {
         width: 100%;
         margin-top: 50px;
+        margin-left: 0px;
+        height: 100%;
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        
         justify-content: space-between;
     }
 
@@ -502,23 +528,51 @@ input{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .populaires-cards .card-content {
+        width: 100%;
+    }
+   
+    .act{
+        
+        height: 100%;
+    }
+    .imgact{
+        height: 267px;
+    }
+    .cardact{
+        width: 182px;
+        margin-bottom: 24px;
+    }
+    .footer{
+        height: 100%;
+    }
+    .flexbetween3{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .margefoottab{
+        margin-left: 5%;
+    }
 }
-.wrap{
-    display: flex;
-    flex-direction: row;
-}
+
 /* Small devices (phones, less than 768px) */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 :root {
         margin-left: 00px;
         margin-right: 00px;
         max-width: 768px;     
 }
+.margetelfoot{
+    margin-left: 5%;
+}
 body{
     margin: 0px;
     
 }
-.flexbetween{
+form{
+    margin-left: 5%;
+}
+.flexbetween1{
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -547,17 +601,78 @@ body{
 }
 .filtreicone{
    width: 150px;
-   margin-right: 0px;
+   margin-right: 1%;
 
 }
+.hebergements-and-populaires {
+    flex-direction: column;
+    
 }
-@media only screen and (max-width: 768px) {
+.hebergements-and-populaires section {
+    border-radius: 0px;
+}
+.hebergements {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.populaires {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.populaires-cards a {
+    width: 30%;
+}
+
+.populaires-cards .card-title {
+    font-size: 14px;
+}
+
+.populaires-cards .card-subtitle {
+    font-size: 13px;
+}
+.populaires-cards .card-content {
+    width: 100%;
+}
+.cardtel{
+    width: 320%;
+}
+.act{
+    flex-direction: column;
+    height: 100%;
+}
+.imgact{
+    height: 190px;
+}
+.cardact{
+    width: 90%;
+    margin-bottom: 24px;
+}
+.footer{
+    height: 100%;
+}
+.flexbetween3{
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+}
+@media only screen and (max-width: 767px) {
     .disparaitM {
         display: none;   
     }
   }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
     .disparaitD {
         display: none ;   
     }
