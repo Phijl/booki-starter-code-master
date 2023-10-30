@@ -680,6 +680,7 @@ input{
 .cardact{
     width: 90%;
     margin-bottom: 24px;
+    max-width: 310px;
 }
 .footer{
     height: 100%;
