@@ -59,7 +59,11 @@ a {
 
 .card-title {
     font-size: 16px;
-    text-wrap: nowrap;
+    text-wrap: nowrap ;
+}
+.card-titlepop{
+    font-size: 16px;
+    text-wrap: wrap;
 }
 
 .euro {
@@ -77,11 +81,14 @@ a {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
     
+}
+.backgroundgris{
+    background-color: var(--main-bg-color);
 }
 .aff{
     justify-content: center;
@@ -90,7 +97,7 @@ a {
 /****** Hebergements ***********/
 /* Modifier, je pense qu'il faut parler en % et non en pixel pour que ca soit utilisable sur tel/pc/tablette mais je ne sais pas comment connaitre le % */
 .hebergements {
-    height: 626px;
+    
     margin-right: 20px;
     width: 80%;
     display: flex; 
@@ -142,7 +149,7 @@ a {
     
 /****** Populaires ***********/
 .populaires {
-    height: 626px;
+    
     margin-left: 20px;
     width: 30%;
 }
@@ -503,6 +510,7 @@ input{
         height: 100%;
         
     }
+    
 
     .populaires {
         width: 100%;
@@ -517,9 +525,7 @@ input{
         justify-content: space-between;
     }
 
-    .populaires-cards a {
-        width: 30%;
-    }
+    
 
     .populaires-cards .card-title {
         font-size: 14px;
@@ -580,6 +586,12 @@ form{
 .booki{ 
     margin-top: 21px ;
 }
+.backgroundtel{
+    background-color: #fff
+}
+.aff{
+    visibility: hidden;
+}
 .bordure:active{
     border-bottom: 1px solid #0065FC;  
     color: #0065FC;
@@ -597,7 +609,10 @@ form{
 }
 .wrap{ 
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
     
+       
 }
 .filtreicone{
    width: 150px;
@@ -621,17 +636,17 @@ form{
     width: 100%;
     margin-top: 50px;
     margin-left: 0px;
+    order: -1;
 }
 
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.populaires-cards a {
-    width: 30%;
-}
+
 
 .populaires-cards .card-title {
     font-size: 14px;
@@ -644,7 +659,16 @@ form{
     width: 100%;
 }
 .cardtel{
-    width: 320%;
+  width: 310px;
+   
+}
+input{
+    width: 80%;
+
+}
+.disparaitD{
+    width: 50px;
+    margin-right: 20px;
 }
 .act{
     flex-direction: column;
@@ -664,7 +688,6 @@ form{
     align-items: flex-start;
     flex-direction: column;
 }
-
 }
 @media only screen and (max-width: 767px) {
     .disparaitM {
