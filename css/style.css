@@ -552,10 +552,7 @@ input{
     .footer{
         height: 100%;
     }
-    .flexbetween3{
-        align-items: flex-start;
-        flex-direction: column;
-    }
+  
     .margefoottab{
         margin-left: 5%;
     }
