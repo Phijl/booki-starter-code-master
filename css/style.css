@@ -19,8 +19,9 @@
     color: var(--main-color);
 }
 body{
-    margin-top: 0px;
-}
+    margin-top: 0px;    
+    }
+      
 .body {
     display: flex;
     justify-content: center;
@@ -51,6 +52,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    
 }
 
 .card img {
@@ -59,11 +61,11 @@ a {
 
 .card-title {
     font-size: 16px;
-    text-wrap: nowrap ;
+    
 }
 .card-titlepop{
     font-size: 16px;
-    text-wrap: wrap;
+    
 }
 
 .euro {
@@ -129,6 +131,7 @@ a {
 .hebergements-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    white-space: nowrap;
 }
 
 .hebergements-cards .card-subtitle {
@@ -163,6 +166,8 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    
+    
 }
 
 .populaires-cards img {
@@ -400,6 +405,7 @@ input{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    white-space: nowrap;
 }
 
   
@@ -455,7 +461,6 @@ input{
     }
 .act{
     width: 100%;
-    height: 600px;
 }
 .imgact{
     object-fit: cover;
@@ -488,7 +493,7 @@ input{
 
 }
 .margefootr{
-    margin-right: 15%;
+    margin-right: 25%;
 }
 .wrap{
     display: flex;
@@ -504,7 +509,14 @@ input{
         flex-direction: column;
         
     }
-   
+   .flexwrap{
+    row-gap: 10px;
+    justify-content: space-evenly;
+    column-gap: 0;
+   }
+    .card{
+    max-width: 250px;
+   }
     .hebergements {
         width: 100%;
         height: 100%;
@@ -521,8 +533,8 @@ input{
 
     .populaires-cards {
         display: flex;
-        
         justify-content: space-between;
+        
     }
 
     
@@ -534,8 +546,8 @@ input{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    .populaires-cards .card-content {
-        width: 100%;
+    .populaires-cards .card img {
+        height: 144px;
     }
    
     .act{
@@ -567,13 +579,26 @@ input{
 }
 .margetelfoot{
     margin-left: 5%;
+    margin-right: 5%;
 }
 body{
     margin: 0px;
     
 }
+.card{
+    max-width: 310px;
+    min-width: 310px;
+}
+.margetitre{
+    margin-right: 40px;
+}
+.textefiltre{
+    margin: 0;
+    font-size: 11px;
+}
 form{
     margin-left: 5%;
+    margin-right: 5%;
 }
 .flexbetween1{
     justify-content: center;
@@ -613,7 +638,8 @@ form{
 }
 .filtreicone{
    width: 150px;
-   margin-right: 1%;
+   margin: 0;
+   
 
 }
 .hebergements-and-populaires {
