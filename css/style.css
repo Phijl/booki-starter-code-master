@@ -509,6 +509,9 @@ input{
         flex-direction: column;
         
     }
+    .card-titlepop {
+        font-size: 14px;
+    }
    .flexwrap{
     row-gap: 10px;
     justify-content: space-evenly;
@@ -534,6 +537,7 @@ input{
     .populaires-cards {
         display: flex;
         justify-content: space-between;
+        gap: 10px ;
         
     }
 
